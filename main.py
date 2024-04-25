@@ -131,13 +131,16 @@ def merge_data(dhl_data, ds_data, show_prints):
     # Check if both DataFrames have the 'TrackingNumber' column
     if 'trackingNumber' in dhl_data.columns and 'trackingNumber' in ds_data.columns:
         # Merge dhl_orders and ds_orders based on TrackingNumber
-        merged_data = pd.merge(dhl_data, ds_data, on="trackingNumber", how="left")
+        merged_data = dhl_data.merge(ds_data, on="trackingNumber", how="left")
         
         # Rename columns
         merged_data.rename(columns={"NegotiatedCost": "DhlPrice", "MarkupCost": "VeraCorePrice"}, inplace=True)
         
         # Add 'Profit' column
         merged_data['Profit'] =  merged_data['VeraCorePrice'].astype(float) - merged_data['dhlMarkup(11%)'].astype(float)
+        
+        # Convert 'Profit' column to float and round to 2 decimal places
+        merged_data['Profit'] = merged_data['Profit'].astype(float).round(2)
         
         if show_prints:
             st.write('### Invoice Comparison Report')
@@ -148,6 +151,7 @@ def merge_data(dhl_data, ds_data, show_prints):
         return merged_data
     else:
         st.write("Both DataFrames should have the 'TrackingNumber' column for merging.")
+
 
 if __name__ == "__main__":
     main()
