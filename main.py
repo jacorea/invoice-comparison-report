@@ -128,6 +128,9 @@ def merge_data(dhl_data, ds_data, show_prints):
     # Rename 'TrackingNumber' column in ds_orders to match the column name in dhl_orders
     ds_data.rename(columns={"TrackingNumber": "trackingNumber", "SalesChannel": "CUS-ID"}, inplace=True)
     
+    # Drop duplicates from ds_data based on 'trackingNumber'
+    ds_data.drop_duplicates(subset='trackingNumber', keep='first', inplace=True)
+    
     # Check if both DataFrames have the 'TrackingNumber' column
     if 'trackingNumber' in dhl_data.columns and 'trackingNumber' in ds_data.columns:
         # Merge dhl_orders and ds_orders based on TrackingNumber
@@ -151,6 +154,7 @@ def merge_data(dhl_data, ds_data, show_prints):
         return merged_data
     else:
         st.write("Both DataFrames should have the 'TrackingNumber' column for merging.")
+
 
 
 if __name__ == "__main__":
