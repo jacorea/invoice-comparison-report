@@ -1,0 +1,1580 @@
+[
+    {
+      "config": {
+        "defaultAggregated": true,
+        "geoms": [
+          "auto"
+        ],
+        "coordSystem": "generic",
+        "limit": -1,
+        "timezoneDisplayOffset": 0
+      },
+      "encodings": {
+        "dimensions": [
+          {
+            "fid": "orderId",
+            "name": "orderId",
+            "basename": "orderId",
+            "semanticType": "nominal",
+            "analyticType": "dimension",
+            "offset": 0
+          },
+          {
+            "fid": "trackingNumber",
+            "name": "trackingNumber",
+            "basename": "trackingNumber",
+            "semanticType": "nominal",
+            "analyticType": "dimension",
+            "offset": 0
+          },
+          {
+            "fid": "address1",
+            "name": "address1",
+            "basename": "address1",
+            "semanticType": "nominal",
+            "analyticType": "dimension",
+            "offset": 0
+          },
+          {
+            "fid": "city",
+            "name": "city",
+            "basename": "city",
+            "semanticType": "nominal",
+            "analyticType": "dimension",
+            "offset": 0
+          },
+          {
+            "fid": "state",
+            "name": "state",
+            "basename": "state",
+            "semanticType": "nominal",
+            "analyticType": "dimension",
+            "offset": 0
+          },
+          {
+            "fid": "postalCode",
+            "name": "postalCode",
+            "basename": "postalCode",
+            "semanticType": "nominal",
+            "analyticType": "dimension",
+            "offset": 0
+          },
+          {
+            "fid": "country",
+            "name": "country",
+            "basename": "country",
+            "semanticType": "nominal",
+            "analyticType": "dimension",
+            "offset": 0
+          },
+          {
+            "fid": "shippingMethod",
+            "name": "shippingMethod",
+            "basename": "shippingMethod",
+            "semanticType": "nominal",
+            "analyticType": "dimension",
+            "offset": 0
+          },
+          {
+            "fid": "pricingZone",
+            "name": "pricingZone",
+            "basename": "pricingZone",
+            "semanticType": "nominal",
+            "analyticType": "dimension",
+            "offset": 0
+          },
+          {
+            "fid": "CreateDate",
+            "name": "CreateDate",
+            "basename": "CreateDate",
+            "semanticType": "nominal",
+            "analyticType": "dimension",
+            "offset": 0
+          },
+          {
+            "fid": "CUS-ID",
+            "name": "CUS-ID",
+            "basename": "CUS-ID",
+            "semanticType": "nominal",
+            "analyticType": "dimension",
+            "offset": 0
+          },
+          {
+            "fid": "CartonWeight",
+            "name": "CartonWeight",
+            "basename": "CartonWeight",
+            "semanticType": "nominal",
+            "analyticType": "dimension",
+            "offset": 0
+          },
+          {
+            "fid": "DhlPrice",
+            "name": "DhlPrice",
+            "basename": "DhlPrice",
+            "semanticType": "nominal",
+            "analyticType": "dimension",
+            "offset": 0
+          },
+          {
+            "fid": "VeraCorePrice",
+            "name": "VeraCorePrice",
+            "basename": "VeraCorePrice",
+            "semanticType": "nominal",
+            "analyticType": "dimension",
+            "offset": 0
+          },
+          {
+            "fid": "gw_mea_key_fid",
+            "name": "Measure names",
+            "analyticType": "dimension",
+            "semanticType": "nominal"
+          }
+        ],
+        "measures": [
+          {
+            "fid": "dhlPrice",
+            "name": "dhlPrice",
+            "basename": "dhlPrice",
+            "analyticType": "measure",
+            "semanticType": "quantitative",
+            "aggName": "sum",
+            "offset": 0
+          },
+          {
+            "fid": "surCharge",
+            "name": "surCharge",
+            "basename": "surCharge",
+            "analyticType": "measure",
+            "semanticType": "quantitative",
+            "aggName": "sum",
+            "offset": 0
+          },
+          {
+            "fid": "total_price",
+            "name": "total_price",
+            "basename": "total_price",
+            "analyticType": "measure",
+            "semanticType": "quantitative",
+            "aggName": "sum",
+            "offset": 0
+          },
+          {
+            "fid": "dhlMarkup(11%)",
+            "name": "dhlMarkup(11%)",
+            "basename": "dhlMarkup(11%)",
+            "analyticType": "measure",
+            "semanticType": "quantitative",
+            "aggName": "sum",
+            "offset": 0
+          },
+          {
+            "fid": "finalWeight",
+            "name": "finalWeight",
+            "basename": "finalWeight",
+            "analyticType": "measure",
+            "semanticType": "quantitative",
+            "aggName": "sum",
+            "offset": 0
+          },
+          {
+            "fid": "ItemHeight",
+            "name": "ItemHeight",
+            "basename": "ItemHeight",
+            "analyticType": "measure",
+            "semanticType": "quantitative",
+            "aggName": "sum",
+            "offset": 0
+          },
+          {
+            "fid": "ItemLength",
+            "name": "ItemLength",
+            "basename": "ItemLength",
+            "analyticType": "measure",
+            "semanticType": "quantitative",
+            "aggName": "sum",
+            "offset": 0
+          },
+          {
+            "fid": "ItemWidth",
+            "name": "ItemWidth",
+            "basename": "ItemWidth",
+            "analyticType": "measure",
+            "semanticType": "quantitative",
+            "aggName": "sum",
+            "offset": 0
+          },
+          {
+            "fid": "ItemWeight",
+            "name": "ItemWeight",
+            "basename": "ItemWeight",
+            "analyticType": "measure",
+            "semanticType": "quantitative",
+            "aggName": "sum",
+            "offset": 0
+          },
+          {
+            "fid": "Profit",
+            "name": "Profit",
+            "basename": "Profit",
+            "analyticType": "measure",
+            "semanticType": "quantitative",
+            "aggName": "sum",
+            "offset": 0
+          },
+          {
+            "fid": "gw_count_fid",
+            "name": "Row count",
+            "analyticType": "measure",
+            "semanticType": "quantitative",
+            "aggName": "sum",
+            "computed": true,
+            "expression": {
+              "op": "one",
+              "params": [],
+              "as": "gw_count_fid"
+            }
+          },
+          {
+            "fid": "gw_mea_val_fid",
+            "name": "Measure values",
+            "analyticType": "measure",
+            "semanticType": "quantitative",
+            "aggName": "sum"
+          }
+        ],
+        "rows": [
+          {
+            "fid": "CUS-ID",
+            "name": "CUS-ID",
+            "basename": "CUS-ID",
+            "semanticType": "nominal",
+            "analyticType": "dimension",
+            "offset": 0
+          }
+        ],
+        "columns": [
+          {
+            "fid": "Profit",
+            "name": "Profit",
+            "basename": "Profit",
+            "analyticType": "measure",
+            "semanticType": "quantitative",
+            "aggName": "sum",
+            "offset": 0
+          }
+        ],
+        "color": [],
+        "opacity": [],
+        "size": [],
+        "shape": [],
+        "radius": [],
+        "theta": [],
+        "longitude": [],
+        "latitude": [],
+        "geoId": [],
+        "details": [],
+        "filters": [],
+        "text": []
+      },
+      "layout": {
+        "showActions": false,
+        "showTableSummary": false,
+        "stack": "stack",
+        "interactiveScale": false,
+        "zeroScale": true,
+        "size": {
+          "mode": "full",
+          "width": 320,
+          "height": 200
+        },
+        "format": {},
+        "geoKey": "name",
+        "resolve": {
+          "x": false,
+          "y": false,
+          "color": false,
+          "opacity": false,
+          "shape": false,
+          "size": false
+        }
+      },
+      "visId": "gw_YNfn",
+      "name": "Profit by Customer"
+    },
+    {
+      "config": {
+        "defaultAggregated": true,
+        "geoms": [
+          "auto"
+        ],
+        "coordSystem": "generic",
+        "limit": -1,
+        "timezoneDisplayOffset": 0
+      },
+      "encodings": {
+        "dimensions": [
+          {
+            "fid": "orderId",
+            "name": "orderId",
+            "basename": "orderId",
+            "semanticType": "nominal",
+            "analyticType": "dimension",
+            "offset": 0
+          },
+          {
+            "fid": "trackingNumber",
+            "name": "trackingNumber",
+            "basename": "trackingNumber",
+            "semanticType": "nominal",
+            "analyticType": "dimension",
+            "offset": 0
+          },
+          {
+            "fid": "address1",
+            "name": "address1",
+            "basename": "address1",
+            "semanticType": "nominal",
+            "analyticType": "dimension",
+            "offset": 0
+          },
+          {
+            "fid": "city",
+            "name": "city",
+            "basename": "city",
+            "semanticType": "nominal",
+            "analyticType": "dimension",
+            "offset": 0
+          },
+          {
+            "fid": "state",
+            "name": "state",
+            "basename": "state",
+            "semanticType": "nominal",
+            "analyticType": "dimension",
+            "offset": 0
+          },
+          {
+            "fid": "postalCode",
+            "name": "postalCode",
+            "basename": "postalCode",
+            "semanticType": "nominal",
+            "analyticType": "dimension",
+            "offset": 0
+          },
+          {
+            "fid": "country",
+            "name": "country",
+            "basename": "country",
+            "semanticType": "nominal",
+            "analyticType": "dimension",
+            "offset": 0
+          },
+          {
+            "fid": "shippingMethod",
+            "name": "shippingMethod",
+            "basename": "shippingMethod",
+            "semanticType": "nominal",
+            "analyticType": "dimension",
+            "offset": 0
+          },
+          {
+            "fid": "pricingZone",
+            "name": "pricingZone",
+            "basename": "pricingZone",
+            "semanticType": "nominal",
+            "analyticType": "dimension",
+            "offset": 0
+          },
+          {
+            "fid": "CreateDate",
+            "name": "CreateDate",
+            "basename": "CreateDate",
+            "semanticType": "nominal",
+            "analyticType": "dimension",
+            "offset": 0
+          },
+          {
+            "fid": "CUS-ID",
+            "name": "CUS-ID",
+            "basename": "CUS-ID",
+            "semanticType": "nominal",
+            "analyticType": "dimension",
+            "offset": 0
+          },
+          {
+            "fid": "CartonWeight",
+            "name": "CartonWeight",
+            "basename": "CartonWeight",
+            "semanticType": "nominal",
+            "analyticType": "dimension",
+            "offset": 0
+          },
+          {
+            "fid": "DhlPrice",
+            "name": "DhlPrice",
+            "basename": "DhlPrice",
+            "semanticType": "nominal",
+            "analyticType": "dimension",
+            "offset": 0
+          },
+          {
+            "fid": "VeraCorePrice",
+            "name": "VeraCorePrice",
+            "basename": "VeraCorePrice",
+            "semanticType": "nominal",
+            "analyticType": "dimension",
+            "offset": 0
+          },
+          {
+            "fid": "gw_mea_key_fid",
+            "name": "Measure names",
+            "analyticType": "dimension",
+            "semanticType": "nominal"
+          }
+        ],
+        "measures": [
+          {
+            "fid": "dhlPrice",
+            "name": "dhlPrice",
+            "basename": "dhlPrice",
+            "analyticType": "measure",
+            "semanticType": "quantitative",
+            "aggName": "sum",
+            "offset": 0
+          },
+          {
+            "fid": "surCharge",
+            "name": "surCharge",
+            "basename": "surCharge",
+            "analyticType": "measure",
+            "semanticType": "quantitative",
+            "aggName": "sum",
+            "offset": 0
+          },
+          {
+            "fid": "total_price",
+            "name": "total_price",
+            "basename": "total_price",
+            "analyticType": "measure",
+            "semanticType": "quantitative",
+            "aggName": "sum",
+            "offset": 0
+          },
+          {
+            "fid": "dhlMarkup(11%)",
+            "name": "dhlMarkup(11%)",
+            "basename": "dhlMarkup(11%)",
+            "analyticType": "measure",
+            "semanticType": "quantitative",
+            "aggName": "sum",
+            "offset": 0
+          },
+          {
+            "fid": "finalWeight",
+            "name": "finalWeight",
+            "basename": "finalWeight",
+            "analyticType": "measure",
+            "semanticType": "quantitative",
+            "aggName": "sum",
+            "offset": 0
+          },
+          {
+            "fid": "ItemHeight",
+            "name": "ItemHeight",
+            "basename": "ItemHeight",
+            "analyticType": "measure",
+            "semanticType": "quantitative",
+            "aggName": "sum",
+            "offset": 0
+          },
+          {
+            "fid": "ItemLength",
+            "name": "ItemLength",
+            "basename": "ItemLength",
+            "analyticType": "measure",
+            "semanticType": "quantitative",
+            "aggName": "sum",
+            "offset": 0
+          },
+          {
+            "fid": "ItemWidth",
+            "name": "ItemWidth",
+            "basename": "ItemWidth",
+            "analyticType": "measure",
+            "semanticType": "quantitative",
+            "aggName": "sum",
+            "offset": 0
+          },
+          {
+            "fid": "ItemWeight",
+            "name": "ItemWeight",
+            "basename": "ItemWeight",
+            "analyticType": "measure",
+            "semanticType": "quantitative",
+            "aggName": "sum",
+            "offset": 0
+          },
+          {
+            "fid": "Profit",
+            "name": "Profit",
+            "basename": "Profit",
+            "analyticType": "measure",
+            "semanticType": "quantitative",
+            "aggName": "sum",
+            "offset": 0
+          },
+          {
+            "fid": "gw_count_fid",
+            "name": "Row count",
+            "analyticType": "measure",
+            "semanticType": "quantitative",
+            "aggName": "sum",
+            "computed": true,
+            "expression": {
+              "op": "one",
+              "params": [],
+              "as": "gw_count_fid"
+            }
+          },
+          {
+            "fid": "gw_mea_val_fid",
+            "name": "Measure values",
+            "analyticType": "measure",
+            "semanticType": "quantitative",
+            "aggName": "sum"
+          }
+        ],
+        "rows": [
+          {
+            "fid": "CUS-ID",
+            "name": "CUS-ID",
+            "basename": "CUS-ID",
+            "semanticType": "nominal",
+            "analyticType": "dimension",
+            "offset": 0
+          }
+        ],
+        "columns": [
+          {
+            "fid": "Profit",
+            "name": "Profit",
+            "basename": "Profit",
+            "analyticType": "measure",
+            "semanticType": "quantitative",
+            "aggName": "sum",
+            "offset": 0
+          }
+        ],
+        "color": [],
+        "opacity": [],
+        "size": [],
+        "shape": [],
+        "radius": [],
+        "theta": [],
+        "longitude": [],
+        "latitude": [],
+        "geoId": [],
+        "details": [],
+        "filters": [
+          {
+            "fid": "Profit",
+            "name": "Profit",
+            "basename": "Profit",
+            "analyticType": "measure",
+            "semanticType": "quantitative",
+            "aggName": "sum",
+            "offset": 0,
+            "rule": {
+              "type": "range",
+              "value": [
+                -1.7568000000000001,
+                0
+              ]
+            }
+          }
+        ],
+        "text": []
+      },
+      "layout": {
+        "showActions": false,
+        "showTableSummary": false,
+        "stack": "stack",
+        "interactiveScale": false,
+        "zeroScale": true,
+        "size": {
+          "mode": "full",
+          "width": 320,
+          "height": 200
+        },
+        "format": {},
+        "geoKey": "name",
+        "resolve": {
+          "x": false,
+          "y": false,
+          "color": false,
+          "opacity": false,
+          "shape": false,
+          "size": false
+        }
+      },
+      "visId": "gw_O7qE",
+      "name": "Profit Loss by Customer"
+    },
+    {
+      "config": {
+        "defaultAggregated": true,
+        "geoms": [
+          "auto"
+        ],
+        "coordSystem": "generic",
+        "limit": -1,
+        "timezoneDisplayOffset": 0
+      },
+      "encodings": {
+        "dimensions": [
+          {
+            "fid": "orderId",
+            "name": "orderId",
+            "basename": "orderId",
+            "semanticType": "nominal",
+            "analyticType": "dimension",
+            "offset": 0
+          },
+          {
+            "fid": "trackingNumber",
+            "name": "trackingNumber",
+            "basename": "trackingNumber",
+            "semanticType": "nominal",
+            "analyticType": "dimension",
+            "offset": 0
+          },
+          {
+            "fid": "address1",
+            "name": "address1",
+            "basename": "address1",
+            "semanticType": "nominal",
+            "analyticType": "dimension",
+            "offset": 0
+          },
+          {
+            "fid": "city",
+            "name": "city",
+            "basename": "city",
+            "semanticType": "nominal",
+            "analyticType": "dimension",
+            "offset": 0
+          },
+          {
+            "fid": "state",
+            "name": "state",
+            "basename": "state",
+            "semanticType": "nominal",
+            "analyticType": "dimension",
+            "offset": 0
+          },
+          {
+            "fid": "postalCode",
+            "name": "postalCode",
+            "basename": "postalCode",
+            "semanticType": "nominal",
+            "analyticType": "dimension",
+            "offset": 0
+          },
+          {
+            "fid": "country",
+            "name": "country",
+            "basename": "country",
+            "semanticType": "nominal",
+            "analyticType": "dimension",
+            "offset": 0
+          },
+          {
+            "fid": "shippingMethod",
+            "name": "shippingMethod",
+            "basename": "shippingMethod",
+            "semanticType": "nominal",
+            "analyticType": "dimension",
+            "offset": 0
+          },
+          {
+            "fid": "pricingZone",
+            "name": "pricingZone",
+            "basename": "pricingZone",
+            "semanticType": "nominal",
+            "analyticType": "dimension",
+            "offset": 0
+          },
+          {
+            "fid": "CreateDate",
+            "name": "CreateDate",
+            "basename": "CreateDate",
+            "semanticType": "nominal",
+            "analyticType": "dimension",
+            "offset": 0
+          },
+          {
+            "fid": "CUS-ID",
+            "name": "CUS-ID",
+            "basename": "CUS-ID",
+            "semanticType": "nominal",
+            "analyticType": "dimension",
+            "offset": 0
+          },
+          {
+            "fid": "CartonWeight",
+            "name": "CartonWeight",
+            "basename": "CartonWeight",
+            "semanticType": "nominal",
+            "analyticType": "dimension",
+            "offset": 0
+          },
+          {
+            "fid": "DhlPrice",
+            "name": "DhlPrice",
+            "basename": "DhlPrice",
+            "semanticType": "nominal",
+            "analyticType": "dimension",
+            "offset": 0
+          },
+          {
+            "fid": "VeraCorePrice",
+            "name": "VeraCorePrice",
+            "basename": "VeraCorePrice",
+            "semanticType": "nominal",
+            "analyticType": "dimension",
+            "offset": 0
+          },
+          {
+            "fid": "gw_mea_key_fid",
+            "name": "Measure names",
+            "analyticType": "dimension",
+            "semanticType": "nominal"
+          }
+        ],
+        "measures": [
+          {
+            "fid": "dhlPrice",
+            "name": "dhlPrice",
+            "basename": "dhlPrice",
+            "analyticType": "measure",
+            "semanticType": "quantitative",
+            "aggName": "sum",
+            "offset": 0
+          },
+          {
+            "fid": "surCharge",
+            "name": "surCharge",
+            "basename": "surCharge",
+            "analyticType": "measure",
+            "semanticType": "quantitative",
+            "aggName": "sum",
+            "offset": 0
+          },
+          {
+            "fid": "total_price",
+            "name": "total_price",
+            "basename": "total_price",
+            "analyticType": "measure",
+            "semanticType": "quantitative",
+            "aggName": "sum",
+            "offset": 0
+          },
+          {
+            "fid": "dhlMarkup(11%)",
+            "name": "dhlMarkup(11%)",
+            "basename": "dhlMarkup(11%)",
+            "analyticType": "measure",
+            "semanticType": "quantitative",
+            "aggName": "sum",
+            "offset": 0
+          },
+          {
+            "fid": "finalWeight",
+            "name": "finalWeight",
+            "basename": "finalWeight",
+            "analyticType": "measure",
+            "semanticType": "quantitative",
+            "aggName": "sum",
+            "offset": 0
+          },
+          {
+            "fid": "ItemHeight",
+            "name": "ItemHeight",
+            "basename": "ItemHeight",
+            "analyticType": "measure",
+            "semanticType": "quantitative",
+            "aggName": "sum",
+            "offset": 0
+          },
+          {
+            "fid": "ItemLength",
+            "name": "ItemLength",
+            "basename": "ItemLength",
+            "analyticType": "measure",
+            "semanticType": "quantitative",
+            "aggName": "sum",
+            "offset": 0
+          },
+          {
+            "fid": "ItemWidth",
+            "name": "ItemWidth",
+            "basename": "ItemWidth",
+            "analyticType": "measure",
+            "semanticType": "quantitative",
+            "aggName": "sum",
+            "offset": 0
+          },
+          {
+            "fid": "ItemWeight",
+            "name": "ItemWeight",
+            "basename": "ItemWeight",
+            "analyticType": "measure",
+            "semanticType": "quantitative",
+            "aggName": "sum",
+            "offset": 0
+          },
+          {
+            "fid": "Profit",
+            "name": "Profit",
+            "basename": "Profit",
+            "analyticType": "measure",
+            "semanticType": "quantitative",
+            "aggName": "sum",
+            "offset": 0
+          },
+          {
+            "fid": "gw_count_fid",
+            "name": "Row count",
+            "analyticType": "measure",
+            "semanticType": "quantitative",
+            "aggName": "sum",
+            "computed": true,
+            "expression": {
+              "op": "one",
+              "params": [],
+              "as": "gw_count_fid"
+            }
+          },
+          {
+            "fid": "gw_mea_val_fid",
+            "name": "Measure values",
+            "analyticType": "measure",
+            "semanticType": "quantitative",
+            "aggName": "sum"
+          }
+        ],
+        "rows": [
+          {
+            "fid": "shippingMethod",
+            "name": "shippingMethod",
+            "basename": "shippingMethod",
+            "semanticType": "nominal",
+            "analyticType": "dimension",
+            "offset": 0
+          }
+        ],
+        "columns": [
+          {
+            "fid": "Profit",
+            "name": "Profit",
+            "basename": "Profit",
+            "analyticType": "measure",
+            "semanticType": "quantitative",
+            "aggName": "sum",
+            "offset": 0
+          }
+        ],
+        "color": [],
+        "opacity": [],
+        "size": [],
+        "shape": [],
+        "radius": [],
+        "theta": [],
+        "longitude": [],
+        "latitude": [],
+        "geoId": [],
+        "details": [],
+        "filters": [
+          {
+            "fid": "Profit",
+            "name": "Profit",
+            "basename": "Profit",
+            "analyticType": "measure",
+            "semanticType": "quantitative",
+            "aggName": "sum",
+            "offset": 0,
+            "rule": {
+              "type": "range",
+              "value": [
+                -1.7568000000000001,
+                0
+              ]
+            }
+          }
+        ],
+        "text": []
+      },
+      "layout": {
+        "showActions": false,
+        "showTableSummary": false,
+        "stack": "stack",
+        "interactiveScale": false,
+        "zeroScale": true,
+        "size": {
+          "mode": "full",
+          "width": 320,
+          "height": 200
+        },
+        "format": {},
+        "geoKey": "name",
+        "resolve": {
+          "x": false,
+          "y": false,
+          "color": false,
+          "opacity": false,
+          "shape": false,
+          "size": false
+        }
+      },
+      "visId": "gw_9pd0",
+      "name": "Loss by Shipping Method"
+    },
+    {
+      "config": {
+        "defaultAggregated": true,
+        "geoms": [
+          "auto"
+        ],
+        "coordSystem": "generic",
+        "limit": -1,
+        "timezoneDisplayOffset": 0
+      },
+      "encodings": {
+        "dimensions": [
+          {
+            "fid": "orderId",
+            "name": "orderId",
+            "basename": "orderId",
+            "semanticType": "nominal",
+            "analyticType": "dimension",
+            "offset": 0
+          },
+          {
+            "fid": "trackingNumber",
+            "name": "trackingNumber",
+            "basename": "trackingNumber",
+            "semanticType": "nominal",
+            "analyticType": "dimension",
+            "offset": 0
+          },
+          {
+            "fid": "address1",
+            "name": "address1",
+            "basename": "address1",
+            "semanticType": "nominal",
+            "analyticType": "dimension",
+            "offset": 0
+          },
+          {
+            "fid": "city",
+            "name": "city",
+            "basename": "city",
+            "semanticType": "nominal",
+            "analyticType": "dimension",
+            "offset": 0
+          },
+          {
+            "fid": "state",
+            "name": "state",
+            "basename": "state",
+            "semanticType": "nominal",
+            "analyticType": "dimension",
+            "offset": 0
+          },
+          {
+            "fid": "postalCode",
+            "name": "postalCode",
+            "basename": "postalCode",
+            "semanticType": "nominal",
+            "analyticType": "dimension",
+            "offset": 0
+          },
+          {
+            "fid": "country",
+            "name": "country",
+            "basename": "country",
+            "semanticType": "nominal",
+            "analyticType": "dimension",
+            "offset": 0
+          },
+          {
+            "fid": "shippingMethod",
+            "name": "shippingMethod",
+            "basename": "shippingMethod",
+            "semanticType": "nominal",
+            "analyticType": "dimension",
+            "offset": 0
+          },
+          {
+            "fid": "pricingZone",
+            "name": "pricingZone",
+            "basename": "pricingZone",
+            "semanticType": "nominal",
+            "analyticType": "dimension",
+            "offset": 0
+          },
+          {
+            "fid": "CreateDate",
+            "name": "CreateDate",
+            "basename": "CreateDate",
+            "semanticType": "nominal",
+            "analyticType": "dimension",
+            "offset": 0
+          },
+          {
+            "fid": "CUS-ID",
+            "name": "CUS-ID",
+            "basename": "CUS-ID",
+            "semanticType": "nominal",
+            "analyticType": "dimension",
+            "offset": 0
+          },
+          {
+            "fid": "CartonWeight",
+            "name": "CartonWeight",
+            "basename": "CartonWeight",
+            "semanticType": "nominal",
+            "analyticType": "dimension",
+            "offset": 0
+          },
+          {
+            "fid": "DhlPrice",
+            "name": "DhlPrice",
+            "basename": "DhlPrice",
+            "semanticType": "nominal",
+            "analyticType": "dimension",
+            "offset": 0
+          },
+          {
+            "fid": "VeraCorePrice",
+            "name": "VeraCorePrice",
+            "basename": "VeraCorePrice",
+            "semanticType": "nominal",
+            "analyticType": "dimension",
+            "offset": 0
+          },
+          {
+            "fid": "gw_mea_key_fid",
+            "name": "Measure names",
+            "analyticType": "dimension",
+            "semanticType": "nominal"
+          }
+        ],
+        "measures": [
+          {
+            "fid": "dhlPrice",
+            "name": "dhlPrice",
+            "basename": "dhlPrice",
+            "analyticType": "measure",
+            "semanticType": "quantitative",
+            "aggName": "sum",
+            "offset": 0
+          },
+          {
+            "fid": "surCharge",
+            "name": "surCharge",
+            "basename": "surCharge",
+            "analyticType": "measure",
+            "semanticType": "quantitative",
+            "aggName": "sum",
+            "offset": 0
+          },
+          {
+            "fid": "total_price",
+            "name": "total_price",
+            "basename": "total_price",
+            "analyticType": "measure",
+            "semanticType": "quantitative",
+            "aggName": "sum",
+            "offset": 0
+          },
+          {
+            "fid": "dhlMarkup(11%)",
+            "name": "dhlMarkup(11%)",
+            "basename": "dhlMarkup(11%)",
+            "analyticType": "measure",
+            "semanticType": "quantitative",
+            "aggName": "sum",
+            "offset": 0
+          },
+          {
+            "fid": "finalWeight",
+            "name": "finalWeight",
+            "basename": "finalWeight",
+            "analyticType": "measure",
+            "semanticType": "quantitative",
+            "aggName": "sum",
+            "offset": 0
+          },
+          {
+            "fid": "ItemHeight",
+            "name": "ItemHeight",
+            "basename": "ItemHeight",
+            "analyticType": "measure",
+            "semanticType": "quantitative",
+            "aggName": "sum",
+            "offset": 0
+          },
+          {
+            "fid": "ItemLength",
+            "name": "ItemLength",
+            "basename": "ItemLength",
+            "analyticType": "measure",
+            "semanticType": "quantitative",
+            "aggName": "sum",
+            "offset": 0
+          },
+          {
+            "fid": "ItemWidth",
+            "name": "ItemWidth",
+            "basename": "ItemWidth",
+            "analyticType": "measure",
+            "semanticType": "quantitative",
+            "aggName": "sum",
+            "offset": 0
+          },
+          {
+            "fid": "ItemWeight",
+            "name": "ItemWeight",
+            "basename": "ItemWeight",
+            "analyticType": "measure",
+            "semanticType": "quantitative",
+            "aggName": "sum",
+            "offset": 0
+          },
+          {
+            "fid": "Profit",
+            "name": "Profit",
+            "basename": "Profit",
+            "analyticType": "measure",
+            "semanticType": "quantitative",
+            "aggName": "sum",
+            "offset": 0
+          },
+          {
+            "fid": "gw_count_fid",
+            "name": "Row count",
+            "analyticType": "measure",
+            "semanticType": "quantitative",
+            "aggName": "sum",
+            "computed": true,
+            "expression": {
+              "op": "one",
+              "params": [],
+              "as": "gw_count_fid"
+            }
+          },
+          {
+            "fid": "gw_mea_val_fid",
+            "name": "Measure values",
+            "analyticType": "measure",
+            "semanticType": "quantitative",
+            "aggName": "sum"
+          }
+        ],
+        "rows": [
+          {
+            "fid": "pricingZone",
+            "name": "pricingZone",
+            "basename": "pricingZone",
+            "semanticType": "nominal",
+            "analyticType": "dimension",
+            "offset": 0
+          }
+        ],
+        "columns": [
+          {
+            "fid": "Profit",
+            "name": "Profit",
+            "basename": "Profit",
+            "analyticType": "measure",
+            "semanticType": "quantitative",
+            "aggName": "sum",
+            "offset": 0
+          }
+        ],
+        "color": [],
+        "opacity": [],
+        "size": [],
+        "shape": [],
+        "radius": [],
+        "theta": [],
+        "longitude": [],
+        "latitude": [],
+        "geoId": [],
+        "details": [],
+        "filters": [
+          {
+            "fid": "Profit",
+            "name": "Profit",
+            "basename": "Profit",
+            "analyticType": "measure",
+            "semanticType": "quantitative",
+            "aggName": "sum",
+            "offset": 0,
+            "rule": {
+              "type": "range",
+              "value": [
+                -1.7568000000000001,
+                0
+              ]
+            }
+          }
+        ],
+        "text": []
+      },
+      "layout": {
+        "showActions": false,
+        "showTableSummary": false,
+        "stack": "stack",
+        "interactiveScale": false,
+        "zeroScale": true,
+        "size": {
+          "mode": "full",
+          "width": 320,
+          "height": 200
+        },
+        "format": {},
+        "geoKey": "name",
+        "resolve": {
+          "x": false,
+          "y": false,
+          "color": false,
+          "opacity": false,
+          "shape": false,
+          "size": false
+        }
+      },
+      "visId": "gw_Vtzy",
+      "name": "Profit Loss by Pricing Zone"
+    },
+    {
+      "config": {
+        "defaultAggregated": true,
+        "geoms": [
+          "auto"
+        ],
+        "coordSystem": "generic",
+        "limit": -1,
+        "timezoneDisplayOffset": 0
+      },
+      "encodings": {
+        "dimensions": [
+          {
+            "fid": "orderId",
+            "name": "orderId",
+            "basename": "orderId",
+            "semanticType": "nominal",
+            "analyticType": "dimension",
+            "offset": 0
+          },
+          {
+            "fid": "trackingNumber",
+            "name": "trackingNumber",
+            "basename": "trackingNumber",
+            "semanticType": "nominal",
+            "analyticType": "dimension",
+            "offset": 0
+          },
+          {
+            "fid": "address1",
+            "name": "address1",
+            "basename": "address1",
+            "semanticType": "nominal",
+            "analyticType": "dimension",
+            "offset": 0
+          },
+          {
+            "fid": "city",
+            "name": "city",
+            "basename": "city",
+            "semanticType": "nominal",
+            "analyticType": "dimension",
+            "offset": 0
+          },
+          {
+            "fid": "state",
+            "name": "state",
+            "basename": "state",
+            "semanticType": "nominal",
+            "analyticType": "dimension",
+            "offset": 0
+          },
+          {
+            "fid": "postalCode",
+            "name": "postalCode",
+            "basename": "postalCode",
+            "semanticType": "nominal",
+            "analyticType": "dimension",
+            "offset": 0
+          },
+          {
+            "fid": "country",
+            "name": "country",
+            "basename": "country",
+            "semanticType": "nominal",
+            "analyticType": "dimension",
+            "offset": 0
+          },
+          {
+            "fid": "shippingMethod",
+            "name": "shippingMethod",
+            "basename": "shippingMethod",
+            "semanticType": "nominal",
+            "analyticType": "dimension",
+            "offset": 0
+          },
+          {
+            "fid": "pricingZone",
+            "name": "pricingZone",
+            "basename": "pricingZone",
+            "semanticType": "nominal",
+            "analyticType": "dimension",
+            "offset": 0
+          },
+          {
+            "fid": "CreateDate",
+            "name": "CreateDate",
+            "basename": "CreateDate",
+            "semanticType": "nominal",
+            "analyticType": "dimension",
+            "offset": 0
+          },
+          {
+            "fid": "CUS-ID",
+            "name": "CUS-ID",
+            "basename": "CUS-ID",
+            "semanticType": "nominal",
+            "analyticType": "dimension",
+            "offset": 0
+          },
+          {
+            "fid": "CartonWeight",
+            "name": "CartonWeight",
+            "basename": "CartonWeight",
+            "semanticType": "nominal",
+            "analyticType": "dimension",
+            "offset": 0
+          },
+          {
+            "fid": "DhlPrice",
+            "name": "DhlPrice",
+            "basename": "DhlPrice",
+            "semanticType": "nominal",
+            "analyticType": "dimension",
+            "offset": 0
+          },
+          {
+            "fid": "VeraCorePrice",
+            "name": "VeraCorePrice",
+            "basename": "VeraCorePrice",
+            "semanticType": "nominal",
+            "analyticType": "dimension",
+            "offset": 0
+          },
+          {
+            "fid": "gw_mea_key_fid",
+            "name": "Measure names",
+            "analyticType": "dimension",
+            "semanticType": "nominal"
+          }
+        ],
+        "measures": [
+          {
+            "fid": "dhlPrice",
+            "name": "dhlPrice",
+            "basename": "dhlPrice",
+            "analyticType": "measure",
+            "semanticType": "quantitative",
+            "aggName": "sum",
+            "offset": 0
+          },
+          {
+            "fid": "surCharge",
+            "name": "surCharge",
+            "basename": "surCharge",
+            "analyticType": "measure",
+            "semanticType": "quantitative",
+            "aggName": "sum",
+            "offset": 0
+          },
+          {
+            "fid": "total_price",
+            "name": "total_price",
+            "basename": "total_price",
+            "analyticType": "measure",
+            "semanticType": "quantitative",
+            "aggName": "sum",
+            "offset": 0
+          },
+          {
+            "fid": "dhlMarkup(11%)",
+            "name": "dhlMarkup(11%)",
+            "basename": "dhlMarkup(11%)",
+            "analyticType": "measure",
+            "semanticType": "quantitative",
+            "aggName": "sum",
+            "offset": 0
+          },
+          {
+            "fid": "finalWeight",
+            "name": "finalWeight",
+            "basename": "finalWeight",
+            "analyticType": "measure",
+            "semanticType": "quantitative",
+            "aggName": "sum",
+            "offset": 0
+          },
+          {
+            "fid": "ItemHeight",
+            "name": "ItemHeight",
+            "basename": "ItemHeight",
+            "analyticType": "measure",
+            "semanticType": "quantitative",
+            "aggName": "sum",
+            "offset": 0
+          },
+          {
+            "fid": "ItemLength",
+            "name": "ItemLength",
+            "basename": "ItemLength",
+            "analyticType": "measure",
+            "semanticType": "quantitative",
+            "aggName": "sum",
+            "offset": 0
+          },
+          {
+            "fid": "ItemWidth",
+            "name": "ItemWidth",
+            "basename": "ItemWidth",
+            "analyticType": "measure",
+            "semanticType": "quantitative",
+            "aggName": "sum",
+            "offset": 0
+          },
+          {
+            "fid": "ItemWeight",
+            "name": "ItemWeight",
+            "basename": "ItemWeight",
+            "analyticType": "measure",
+            "semanticType": "quantitative",
+            "aggName": "sum",
+            "offset": 0
+          },
+          {
+            "fid": "Profit",
+            "name": "Profit",
+            "basename": "Profit",
+            "analyticType": "measure",
+            "semanticType": "quantitative",
+            "aggName": "sum",
+            "offset": 0
+          },
+          {
+            "fid": "gw_count_fid",
+            "name": "Row count",
+            "analyticType": "measure",
+            "semanticType": "quantitative",
+            "aggName": "sum",
+            "computed": true,
+            "expression": {
+              "op": "one",
+              "params": [],
+              "as": "gw_count_fid"
+            }
+          },
+          {
+            "fid": "gw_mea_val_fid",
+            "name": "Measure values",
+            "analyticType": "measure",
+            "semanticType": "quantitative",
+            "aggName": "sum"
+          }
+        ],
+        "rows": [
+          {
+            "fid": "state",
+            "name": "state",
+            "basename": "state",
+            "semanticType": "nominal",
+            "analyticType": "dimension",
+            "offset": 0
+          }
+        ],
+        "columns": [
+          {
+            "fid": "Profit",
+            "name": "Profit",
+            "basename": "Profit",
+            "analyticType": "measure",
+            "semanticType": "quantitative",
+            "aggName": "sum",
+            "offset": 0
+          }
+        ],
+        "color": [],
+        "opacity": [],
+        "size": [],
+        "shape": [],
+        "radius": [],
+        "theta": [],
+        "longitude": [],
+        "latitude": [],
+        "geoId": [],
+        "details": [],
+        "filters": [
+          {
+            "fid": "Profit",
+            "name": "Profit",
+            "basename": "Profit",
+            "analyticType": "measure",
+            "semanticType": "quantitative",
+            "aggName": "sum",
+            "offset": 0,
+            "rule": {
+              "type": "range",
+              "value": [
+                -1.7568000000000001,
+                0
+              ]
+            }
+          }
+        ],
+        "text": []
+      },
+      "layout": {
+        "showActions": false,
+        "showTableSummary": false,
+        "stack": "stack",
+        "interactiveScale": false,
+        "zeroScale": true,
+        "size": {
+          "mode": "full",
+          "width": 320,
+          "height": 200
+        },
+        "format": {},
+        "geoKey": "name",
+        "resolve": {
+          "x": false,
+          "y": false,
+          "color": false,
+          "opacity": false,
+          "shape": false,
+          "size": false
+        }
+      },
+      "visId": "gw_L6Qz",
+      "name": "Profit Loss by State"
+    }
+  ]
