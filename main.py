@@ -26,7 +26,7 @@ def main():
                 # Download link for merged data
                 csv = merged_data.to_csv(index=False)
                 b64 = base64.b64encode(csv.encode()).decode()  # some strings
-                link = f'<a href="data:file/csv;base64,{b64}" download="invoice_comparison_report.csv">Download Merged Data</a>'
+                link = f'<a href="data:file/csv;base64,{b64}" download="invoice_comparison_report.csv">Download Invoice Comparison Report</a>'
                 st.markdown(link, unsafe_allow_html=True)
                 
                 st.write("### PyGwalker UI")
@@ -99,7 +99,7 @@ def process_ds_data(uploaded_file, show_prints):
     
     # Use subset of columns
     subset_columns = [
-        "CreateDate", "TrackingNumber", "SalesChannel", "ItemHeight", "ItemLength", "ItemWidth",
+        "MarketOrderId", "SellerOrderId", "CreateDate", "TrackingNumber", "SalesChannel", "ItemHeight", "ItemLength", "ItemWidth",
         "ItemWeight", "CartonWeight", "NegotiatedCost", "MarkupCost"
     ]
     ds_orders = ds_orders[subset_columns]
@@ -144,6 +144,14 @@ def merge_data(dhl_data, ds_data, show_prints):
         
         # Convert 'Profit' column to float and round to 2 decimal places
         merged_data['Profit'] = merged_data['Profit'].astype(float).round(2)
+
+        print(merged_data['SellerOrderId'].head())
+
+        # Update orderId Column
+        merged_data['orderId'] = np.where(merged_data['orderId'] == merged_data['SellerOrderId'], merged_data['MarketOrderId'], merged_data['orderId']) 
+
+        # Drop SellerOrderId and MarketOrderId and CreateDate
+        merged_data.drop(columns=['SellerOrderId', 'MarketOrderId','CreateDate'], inplace=True)
         
         if show_prints:
             st.write('### Invoice Comparison Report')
